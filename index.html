@@ -2,86 +2,136 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Prashant Trivedi | BITS Pilani</title>
+  <title>Prashant Trivedi | Assistant Professor, BITS Pilani</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Prashant Trivedi">
 
   <link rel="stylesheet" href="stylesheet.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<header class="header">
+<!-- ===== Navigation ===== -->
+<header class="nav-wrapper">
   <nav class="navbar">
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#talks">Talks</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <div class="nav-left">Prashant Trivedi</div>
 
-  <div class="hero">
-    <h1>Prashant Trivedi</h1>
-    <p class="hero-subtitle">Assistant Professor, BITS Pilani</p>
-    <div class="hero-links">
-      <a href="mailto:trivedi.prashant15@gmail.com">Email</a>
-      <a href="https://scholar.google.com/citations?user=05_8-qUAAAAJ&hl=en" target="_blank">Google Scholar</a>
-      <a href="https://www.linkedin.com/in/prashant-trivedi-59784a143/" target="_blank">LinkedIn</a>
-      <a href="https://PrashanTrivedi.github.io/CV_P.pdf" target="_blank">CV</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link active">About</a>
+      <a href="#research" class="nav-link">Research</a>
+      <a href="#publications" class="nav-link">Publications</a>
+      <a href="#talks" class="nav-link">Talks</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </div>
-  </div>
+
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </nav>
 </header>
 
-<main class="main-content">
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <h1>Prashant Trivedi</h1>
+  <p class="subtitle">Assistant Professor · BITS Pilani</p>
 
-  <section id="about" class="section">
-    <h2>About</h2>
-    <p>
-      I am an Assistant Professor at BITS Pilani. My research focuses on
-      <strong>learning, optimization, and decision-making under uncertainty</strong>,
-      covering reinforcement learning, RLHF, game theory, MDPs, AI alignment, and related domains.
-    </p>
-  </section>
+  <p class="hero-desc">
+    Learning, Optimization, and Decision-Making under Uncertainty ·
+    Reinforcement Learning · RLHF · Game Theory · MDPs · AI Alignment
+  </p>
 
-  <section id="research" class="section">
-    <h2>Research</h2>
-    <p class="quote">“I’m not interested in doing research; I’m interested in understanding.” — David Blackwell</p>
+  <div class="hero-links">
+    <a href="mailto:trivedi.prashant15@gmail.com">Email</a>
+    <a href="https://scholar.google.com/citations?user=05_8-qUAAAAJ&hl=en" target="_blank">Scholar</a>
+    <a href="https://www.linkedin.com/in/prashant-trivedi-59784a143/" target="_blank">LinkedIn</a>
+    <a href="https://PrashanTrivedi.github.io/CV_P.pdf" target="_blank">CV</a>
+  </div>
+</section>
 
-    <ul class="research-list">
-      <li><strong>MA-LDP:</strong> Regret Minimization in Decentralized Multi-Agent Locally Differentially Private RL</li>
-      <li><strong>PURE:</strong> Preference-based Unlearning in Text-to-Image Diffusion Models</li>
-    </ul>
-  </section>
+<main>
 
-  <section id="publications" class="section">
-    <h2>Publications</h2>
-    <ul class="pub-list">
-      <li><a href="https://link.springer.com/article/10.1007/s13235-022-00449-9" target="_blank">Multi-Agent Natural Actor-Critic Reinforcement Learning Algorithms</a></li>
-      <li><a href="https://proceedings.mlr.press/v206/trivedi23a.html" target="_blank">Multi-Agent Congestion Cost Minimization with Linear Function Approximations</a></li>
-    </ul>
-  </section>
+<!-- ===== About ===== -->
+<section id="about" class="section reveal">
+  <h2>About</h2>
+  <p>
+    I am an Assistant Professor at BITS Pilani. My research focuses on
+    <strong>decision-making under uncertainty</strong>, spanning reinforcement learning,
+    RLHF, multi-agent systems, optimization, game theory, and AI alignment.
+  </p>
+</section>
 
-  <section id="talks" class="section">
-    <h2>Invited Talks</h2>
-    <ul class="talk-list">
-      <li>Natural Actor-Critic RL Algorithms — IISc Bangalore (Online)</li>
-      <li>Learning Noisy Hedonic Games — GAMES 2020</li>
-    </ul>
-  </section>
+<!-- ===== Research ===== -->
+<section id="research" class="section reveal">
+  <h2>Research Interests</h2>
+  <ul>
+    <li>Reinforcement Learning & Multi-Agent RL</li>
+    <li>Optimization, Stochastic Approximation</li>
+    <li>Game Theory & Mechanism Design</li>
+    <li>RLHF, Safety, and AI Alignment</li>
+  </ul>
+</section>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>
-      Department of Computer Science & Information Systems<br>
-      BITS Pilani, Pilani Campus, Rajasthan, India
-    </p>
-  </section>
+<!-- ===== Publications ===== -->
+<section id="publications" class="section reveal">
+  <h2>Publications</h2>
+
+  <!-- Filters -->
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="journal">Journal</button>
+    <button class="filter-btn" data-filter="conference">Conference</button>
+    <button class="filter-btn" data-filter="preprint">Preprint</button>
+  </div>
+
+  <ul class="pub-list">
+    <li class="pub-item journal">
+      <strong>Multi-Agent Natural Actor-Critic Reinforcement Learning Algorithms</strong><br>
+      <em>Dynamic Games and Applications</em>, 2022
+    </li>
+
+    <li class="pub-item conference">
+      <strong>Align-Pro: A Principled Approach to Prompt Optimization for LLM Alignment</strong><br>
+      <em>AAAI</em>, 2025
+    </li>
+
+    <li class="pub-item conference">
+      <strong>Multi-Agent Congestion Cost Minimization with Linear Function Approximations</strong><br>
+      <em>AISTATS</em>, 2023
+    </li>
+
+    <li class="pub-item preprint">
+      <strong>MA-LDP: Regret Minimization in Decentralized Multi-Agent LDP RL</strong><br>
+      <em>Under Review</em>
+    </li>
+  </ul>
+</section>
+
+<!-- ===== Talks ===== -->
+<section id="talks" class="section reveal">
+  <h2>Invited Talks</h2>
+  <ul>
+    <li>Multi-Agent Natural Actor-Critic RL — IISc Bangalore</li>
+    <li>Learning Noisy Hedonic Games — GAMES 2020</li>
+  </ul>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact" class="section reveal">
+  <h2>Contact</h2>
+  <p>
+    Department of Computer Science & Information Systems<br>
+    BITS Pilani, Rajasthan, India
+  </p>
+</section>
 
 </main>
 
-<footer class="footer">
-  <p>Website inspired by modern academic pages</p>
+<footer>
+  <p>© Prashant Trivedi · Academic Website</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
