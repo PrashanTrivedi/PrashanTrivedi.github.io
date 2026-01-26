@@ -1,146 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Prashant Trivedi</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="stylesheet.css">
+  <title>Prashant Trivedi</title>
+
+  <meta name="author" content="Prashant Trivedi">
+  <link rel="icon" type="image/jpeg" href="images/profile.jpg">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#side-nav" data-bs-offset="100">
 
-<div class="container">
+<div class="container-fluid">
+  <div class="row">
 
-  <!-- ===== LEFT COLUMN ===== -->
-  <aside class="sidebar">
-    <img src="prashant.jpg" alt="Prashant Trivedi" class="profile-pic">
+    <!-- ===== LEFT COLUMN ===== -->
+    <nav id="side-nav" class="col-md-3 col-lg-2 d-md-block sidebar">
+      <div class="position-sticky">
 
-    <h1>Prashant Trivedi</h1>
+        <img src="images/profile.jpg" class="profile-img" alt="Prashant Trivedi">
 
-    <p class="affiliation">
-      Assistant Professor<br>
-      BITS Pilani
-    </p>
+        <h1>Prashant Trivedi</h1>
+        <p class="subtitle">
+          Assistant Professor<br>
+          BITS Pilani
+        </p>
 
-    <nav class="side-nav">
-      <a href="#about">About</a>
-      <a href="#news">News</a>
-      <a href="#research">Research</a>
-      <a href="#students">Students & Lab</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#students">Students & Lab</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="social">
+          <a href="mailto:trivedi.prashant15@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://scholar.google.com/" target="_blank"><i class="fa-brands fa-google-scholar"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="CV.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+        </div>
+
+      </div>
     </nav>
 
-    <div class="links">
-      <a href="mailto:trivedi.prashant15@gmail.com">Email</a><br>
-      <a href="https://scholar.google.com/citations?user=05_8-qUAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
-      <a href="https://www.linkedin.com/in/prashant-trivedi-59784a143/" target="_blank">LinkedIn</a><br>
-      <a href="https://PrashanTrivedi.github.io/CV_P.pdf" target="_blank">CV</a>
-    </div>
-  </aside>
+    <!-- ===== RIGHT COLUMN ===== -->
+    <main class="col-md-9 col-lg-10 content">
 
-  <!-- ===== RIGHT COLUMN ===== -->
-  <main class="content">
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am an Assistant Professor at BITS Pilani. My research interests include
+          reinforcement learning, RLHF, multi-agent systems, optimization,
+          game theory, and decision-making under uncertainty.
+        </p>
+      </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I am an Assistant Professor at BITS Pilani. My research focuses on
-        decision-making under uncertainty, including reinforcement learning,
-        RLHF, multi-agent systems, optimization, game theory, and AI alignment.
-      </p>
-    </section>
+      <section id="news">
+        <h2>News</h2>
+        <ul>
+          <li><strong>Jan 2025:</strong> Paper accepted at AAAI 2025.</li>
+          <li><strong>Aug 2024:</strong> Joined BITS Pilani.</li>
+        </ul>
+      </section>
 
-    <section id="news">
-      <h2>News</h2>
-      <ul>
-        <li><strong>Jan 2025:</strong> Paper accepted at AAAI 2025.</li>
-        <li><strong>Aug 2024:</strong> Joined BITS Pilani as Assistant Professor.</li>
-        <li><strong>Apr 2023:</strong> Presented work at AISTATS 2023, Valencia.</li>
-      </ul>
-    </section>
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Reinforcement Learning & Multi-Agent RL</li>
+          <li>Optimization and Stochastic Control</li>
+          <li>Game Theory and MDPs</li>
+          <li>RLHF and AI Alignment</li>
+        </ul>
+      </section>
 
-    <section id="research">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Reinforcement Learning and Multi-Agent RL</li>
-        <li>Optimization and Stochastic Approximation</li>
-        <li>Game Theory and Sequential Decision Making</li>
-        <li>RLHF, Robustness, and AI Alignment</li>
-      </ul>
-    </section>
+      <section id="students">
+        <h2>Students & Lab</h2>
+        <p>
+          I lead the <strong>CLOUD Lab</strong> —
+          <em>Center for Learning, Optimization, and Uncertainty in Decision-making</em>.
+        </p>
 
-    <section id="students">
-      <h2>Students & Lab</h2>
-      <p>
-        I lead research activities under the proposed
-        <strong>CLOUD Lab</strong> (Center for Learning, Optimization, and
-        Uncertainty in Decision-making).
-      </p>
+        <p><strong>PhD Students</strong></p>
+        <ul>
+          <li>(Open positions)</li>
+        </ul>
 
-      <p><strong>PhD Students</strong></p>
-      <ul>
-        <li>(To be announced)</li>
-      </ul>
+        <p><strong>MS / UG Students</strong></p>
+        <ul>
+          <li>(To be updated)</li>
+        </ul>
+      </section>
 
-      <p><strong>MS / Undergraduate Students</strong></p>
-      <ul>
-        <li>(To be announced)</li>
-      </ul>
+      <section id="publications">
+        <h2>Publications</h2>
 
-      <p>
-        <em>I am always looking for motivated students interested in RL,
-        optimization, and decision-making.</em>
-      </p>
-    </section>
+        <p>
+          <strong>Align-Pro: A Principled Approach to Prompt Optimization for LLM Alignment</strong><br>
+          Prashant Trivedi et al.<br>
+          <em>AAAI 2025</em>
+          · <a href="#" onclick="toggleBib('bib1')">BibTeX</a>
+        </p>
 
-    <section id="publications">
-      <h2>Publications</h2>
-
-      <p>
-        <strong>Align-Pro: A Principled Approach to Prompt Optimization for LLM Alignment</strong><br>
-        Prashant Trivedi, Souradip Chakraborty, Avinash Reddy, Vaneet Aggarwal,
-        Amrit Singh Bedi, George K. Atia<br>
-        <em>AAAI 2025</em> ·
-        <a href="https://arxiv.org/abs/2501.03486" target="_blank">arXiv</a> ·
-        <a href="#" onclick="showBibtex('alignpro'); return false;">BibTeX</a>
-      </p>
-
-      <pre id="alignpro" class="bibtex">
+        <pre id="bib1" class="bibtex">
 @inproceedings{trivedi2025alignpro,
-  title={Align-Pro: A Principled Approach to Prompt Optimization for LLM Alignment},
-  author={Trivedi, Prashant and Chakraborty, Souradip and Reddy, Avinash and Aggarwal, Vaneet and Bedi, Amrit Singh and Atia, George},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  title={Align-Pro},
+  author={Trivedi, Prashant et al.},
+  booktitle={AAAI},
   year={2025}
 }
-      </pre>
+        </pre>
 
-      <p>
-        <strong>Multi-Agent Congestion Cost Minimization with Linear Function Approximations</strong><br>
-        Prashant Trivedi, N. Hemachandra<br>
-        <em>AISTATS 2023</em>
-      </p>
+      </section>
 
-      <p>
-        <strong>Multi-Agent Natural Actor-Critic Reinforcement Learning Algorithms</strong><br>
-        Prashant Trivedi, N. Hemachandra<br>
-        <em>Dynamic Games and Applications, 2022</em>
-      </p>
-    </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Department of CSIS<br>
+          BITS Pilani, Rajasthan, India
+        </p>
+      </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Department of Computer Science & Information Systems<br>
-        BITS Pilani, Rajasthan, India
-      </p>
-    </section>
-
-  </main>
-
+    </main>
+  </div>
 </div>
 
-<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
