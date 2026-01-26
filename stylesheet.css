@@ -1,149 +1,105 @@
-:root {
-  --bg: #ffffff;
-  --text: #222;
-  --muted: #555;
-  --accent: #004080;
-  --border: #e0e0e0;
-}
-
-[data-theme="dark"] {
-  --bg: #121212;
-  --text: #eaeaea;
-  --muted: #b0b0b0;
-  --accent: #6ca0ff;
-  --border: #333;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.65;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111;
+  background: #fff;
 }
 
-/* ===== Nav ===== */
-.nav-wrapper {
-  position: sticky;
-  top: 0;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  z-index: 100;
+a {
+  color: #0645ad;
+  text-decoration: none;
 }
 
-.navbar {
-  max-width: 1100px;
-  margin: auto;
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-.nav-links a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: var(--muted);
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
 }
 
-.nav-links a.active {
-  color: var(--accent);
-  font-weight: 600;
+.profile-pic {
+  width: 140px;
+  border-radius: 2px;
+  margin-bottom: 12px;
 }
 
-#theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-  color: var(--muted);
+.sidebar h1 {
+  font-size: 26px;
+  margin-bottom: 6px;
 }
 
-/* ===== Hero ===== */
-.hero {
-  text-align: center;
-  padding: 80px 20px 60px;
+.affiliation {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.side-nav a {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
 }
 
-.subtitle {
-  color: var(--muted);
-  font-size: 1.2rem;
+.links {
+  margin-top: 20px;
+  font-size: 14px;
 }
 
-.hero-desc {
+/* ===== Content ===== */
+.content {
+  margin-left: 60px;
   max-width: 700px;
-  margin: 20px auto;
 }
 
-.hero-links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: var(--accent);
+section {
+  margin-bottom: 40px;
 }
 
-/* ===== Sections ===== */
-.section {
-  max-width: 900px;
-  margin: auto;
-  padding: 60px 20px;
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.section h2 {
-  border-bottom: 2px solid var(--border);
-  padding-bottom: 6px;
+ul {
+  padding-left: 18px;
 }
 
-/* ===== Publications ===== */
-.filters {
-  margin: 20px 0;
+/* ===== BibTeX ===== */
+.bibtex {
+  display: none;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 13px;
+  overflow-x: auto;
+  margin-bottom: 20px;
 }
 
-.filter-btn {
-  background: none;
-  border: 1px solid var(--border);
-  padding: 6px 12px;
-  margin-right: 6px;
-  cursor: pointer;
-}
+/* ===== Mobile ===== */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
 
-.filter-btn.active {
-  background: var(--accent);
-  color: #fff;
-}
+  .sidebar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
-.pub-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.pub-item {
-  margin-bottom: 14px;
-}
-
-/* ===== Reveal animation ===== */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: var(--muted);
-  border-top: 1px solid var(--border);
+  .content {
+    margin-left: 0;
+  }
 }
