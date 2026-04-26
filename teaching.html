@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant Trivedi - Teaching</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+        }
+        header {
+            background: #f4f4f4;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            max-width: 600px; 
+            margin: 0 auto;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: #003d82;
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        .sidebar {
+            flex: 1;
+            max-width: 280px;
+            background: #fafafa;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            position: sticky;
+            top: 80px; 
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            display: block; 
+            border: 3px solid #ddd;
+        }
+
+        .profile-header {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            text-align: center;
+        }
+        .profile-header h1 { margin: 0 0 5px 0; font-size: 1.8rem; color: #222; }
+        .profile-header p { margin: 0; font-size: 0.95rem; color: #666; font-style: italic; }
+        
+        .sidebar h3 { margin-top: 0; color: #222; }
+        .sidebar p { margin: 10px 0; font-size: 0.95rem; }
+        
+        .main-content { flex: 2; }
+        section { margin-bottom: 50px; scroll-margin-top: 70px; }
+        section h2 { border-bottom: 2px solid #0056b3; padding-bottom: 8px; color: #222; margin-top: 0; }
+        .news-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; }
+        .date { font-weight: bold; color: #0056b3; margin-bottom: 5px; }
+        .footer { text-align: center; padding: 20px; margin-top: 40px; background: #222; color: #fff; font-size: 0.9rem; }
+        a { color: #0056b3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header id="main-header"></header>
+
+    <div class="container">
+        
+        <aside class="sidebar" id="main-sidebar"></aside>
+
+        <main class="main-content">
+
+            <section id="teaching-overview">
+                <h2>Teaching Overview</h2>
+                <p>I am passionate about teaching and mentoring students at the intersection of computer science and optimization.</p>
+            </section>
+
+            <section id="current-courses">
+                <h2>Current Courses</h2>
+                
+                <div class="news-item">
+                    <p class="date">Jul - Dec 2026</p>
+                    <p><strong>Programming in C & Data Structures</strong><br>
+                    BITS Pilani, Pilani Campus.</p>
+                </div>
+            </section>
+            
+            <section id="past-courses">
+                <h2>Past Teaching Experience</h2>
+                <ul>
+                    <li><strong>Topics in Learning Algorithms</strong> - IIT Bombay</li>
+                    <li><strong>Markov Decision Processes</strong> - IIT Bombay</li>
+                    <li><strong>Decision Analysis and Game Theory</strong> - IIT Bombay</li>
+                </ul>
+            </section>
+
+            <section id="new courses">
+                <h2>Past Teaching Experience</h2>
+                <ul>
+                    <li><strong>Topics in Learning Algorithms</strong> - IIT Bombay</li>
+                    <li><strong>Markov Decision Processes</strong> - IIT Bombay</li>
+                    <li><strong>Decision Analysis and Game Theory</strong> - IIT Bombay</li>
+                </ul>
+            </section>
+
+            
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Copyright: Prashant Trivedi</p>
+    </footer>
+
+    <script src="template.js"></script>
+
+</body>
+</html>
