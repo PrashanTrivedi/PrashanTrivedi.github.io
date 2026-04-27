@@ -25,7 +25,7 @@ const mySidebar = `
     <p><a href="mailto:someone@example.com">Email Me</a></p>
     <p><a href="#">My LinkedIn</a></p>
     <p><a href="#">My Twitter</a></p>
-    <p><a href="#">My Google Scholar</a></p>
+    <p><a href="https://scholar.google.com/citations?user=05_8-qUAAAAJ&hl=en">My Google Scholar</a></p>
     <p><a href="#">My Curriculum Vitae</a></p>
 `;
 
