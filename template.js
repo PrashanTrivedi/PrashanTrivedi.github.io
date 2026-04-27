@@ -22,11 +22,10 @@ const mySidebar = `
     <p>6121-V New Academic Block<br>
     Department of Computer Science and Information System
     </p>
-    <p><a href="mailto:someone@example.com">Email Me</a></p>
-    <p><a href="#">My LinkedIn</a></p>
-    <p><a href="#">My Twitter</a></p>
+    <p><a href="mailto:prashant.trivedi@pilani.bits-pilani.ac.in">Email Me</a></p>
+    <p><a href="https://www.linkedin.com/in/prashant-trivedi-59784a143/">My LinkedIn</a></p>
     <p><a href="https://scholar.google.com/citations?user=05_8-qUAAAAJ&hl=en">My Google Scholar</a></p>
-    <p><a href="#">My Curriculum Vitae</a></p>
+    <p><a href="https://github.com/PrashanTrivedi/PrashanTrivedi.github.io/blob/main/CV-Prashant.pdf">My Curriculum Vitae</a></p>
 `;
 
 // 3. Inject them INSIDE the existing HTML skeleton
