@@ -4,92 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prashant Trivedi - Bio</title>
-    <style>
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #fff;
-        }
-        header {
-            background: #f4f4f4;
-            padding: 12px 0;
-            border-bottom: 1px solid #ddd;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            max-width: 600px; 
-            margin: 0 auto;
-        }
-        nav a {
-            text-decoration: none;
-            color: #0056b3;
-            font-weight: bold;
-            font-size: 1rem;
-        }
-        nav a:hover {
-            color: #003d82;
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-            display: flex;
-            gap: 40px;
-            align-items: flex-start;
-        }
-        
-        .sidebar {
-            flex: 1;
-            max-width: 280px;
-            background: #fafafa;
-            padding: 25px;
-            border-radius: 8px;
-            border: 1px solid #eee;
-            position: sticky;
-            top: 80px; 
-        }
-
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 20px auto;
-            display: block; 
-            border: 3px solid #ddd;
-        }
-
-        .profile-header {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #ddd;
-            text-align: center;
-        }
-        .profile-header h1 { margin: 0 0 5px 0; font-size: 1.8rem; color: #222; }
-        .profile-header p { margin: 0; font-size: 0.95rem; color: #666; font-style: italic; }
-        
-        .sidebar h3 { margin-top: 0; color: #222; }
-        .sidebar p { margin: 10px 0; font-size: 0.95rem; }
-        
-        .main-content { flex: 2; }
-        section { margin-bottom: 50px; scroll-margin-top: 70px; }
-        section h2 { border-bottom: 2px solid #0056b3; padding-bottom: 8px; color: #222; margin-top: 0; }
-        .news-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; }
-        .date { font-weight: bold; color: #0056b3; margin-bottom: 5px; }
-        .footer { text-align: center; padding: 20px; margin-top: 40px; background: #222; color: #fff; font-size: 0.9rem; }
-        a { color: #0056b3; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -102,30 +17,30 @@
         <main class="main-content">
 
             <section id="education">
-        <h2>Education</h2>
+                <h2>Education</h2>
     
-        <div class="education-list">
+                <div class="education-list">
+                    
+                    <div class="education-item">
+                        <img src="images/logo-iitb.png" alt="IIT Bombay logo" class="institute-logo">
+                        <div class="education-details">
+                            <span class="degree">Doctor of Philosophy</span>
+                            <a href="https://www.example-institute.edu" target="_blank" rel="noopener noreferrer" class="institute-name">Name of the Institute</a>
+                            <span class="education-meta">2020 - 2024 | Focus on Multi-Agent Systems & Optimization</span>
+                        </div>
+                    </div>
             
-            <div class="education-item">
-                <img src="images/logo-iitb.png" alt="IIT Bombay logo" class="institute-logo">
-                <div class="education-details">
-                    <span class="degree">Doctor of Philosophy</span>
-                    <a href="https://www.example-institute.edu" target="_blank" rel="noopener noreferrer" class="institute-name">Name of the Institute</a>
-                    <span class="education-meta">2020 - 2024 | Focus on Multi-Agent Systems & Optimization</span>
-                </div>
-            </div>
-    
-            <div class="education-item">
-                <img src="images/logo-iitb.png" alt="Institute Name Logo" class="institute-logo">
-                <div class="education-details">
-                    <span class="degree">M.Sc. in Computer Science</span>
-                    <a href="https://www.example-institute2.edu" target="_blank" rel="noopener noreferrer" class="institute-name">Name of the Second Institute</a>
-                    <span class="education-meta">2018 - 2020 | Graduated with Honors</span>
-                </div>
-            </div>
+                    <div class="education-item">
+                        <img src="images/logo-iitb.png" alt="Institute Name Logo" class="institute-logo">
+                        <div class="education-details">
+                            <span class="degree">M.Sc. in Computer Science</span>
+                            <a href="https://www.example-institute2.edu" target="_blank" rel="noopener noreferrer" class="institute-name">Name of the Second Institute</a>
+                            <span class="education-meta">2018 - 2020 | Graduated with Honors</span>
+                        </div>
+                    </div>
 
-    </div>
-</section>
+                </div>
+            </section>
    
         </main>
     </div>
