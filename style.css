@@ -107,13 +107,13 @@ section h2 { border-bottom: 2px solid #0056b3; padding-bottom: 8px; color: #222;
 }
 
 .institute-logo {
-    width: 65px;
-    height: 65px;
-    object-fit: contain;
+    width: 80px;       /* Increased the overall box size */
+    height: 80px;
+    object-fit: contain; /* Ensures the logo scales to fit the box without distorting the aspect ratio */
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 6px;
-    padding: 4px;
+    padding: 0;        /* Removed padding so the image can touch the edges if needed */
 }
 
 .education-details {
