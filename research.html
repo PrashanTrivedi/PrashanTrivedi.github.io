@@ -90,6 +90,26 @@
         .pub-title { font-weight: bold; font-size: 1.1rem; margin-bottom: 5px;}
         .pub-authors { color: #444; margin-bottom: 5px; font-style: italic;}
         .pub-venue { color: #0056b3; font-weight: bold;}
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stacks sidebar and main content vertically */
+                gap: 20px;
+                margin: 20px auto;
+            }
+            .sidebar {
+                max-width: 100%; /* Allows sidebar to take full width */
+                position: static; /* Removes sticky behavior so it flows naturally */
+                text-align: center; /* Centers text for a better mobile look */
+            }
+            nav {
+                flex-wrap: wrap; /* Allows navigation links to wrap to the next line if needed */
+                gap: 15px;
+                padding: 0 10px;
+            }
+        }
+        
     </style>
 </head>
 <body>
