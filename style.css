@@ -159,3 +159,28 @@ section h2 { border-bottom: 2px solid #0056b3; padding-bottom: 8px; color: #222;
 
 a { color: #0056b3; text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px auto;
+    }
+    
+    .sidebar {
+        max-width: 100%;
+        position: static; /* Allows the sidebar to scroll normally instead of overlapping content */
+        text-align: center;
+    }
+    
+    nav {
+        flex-wrap: wrap; /* Lets navigation links wrap to the next line on very small screens */
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .education-item {
+        gap: 1rem; /* Slightly tightens the gap between the logo and text on mobile */
+    }
+}
