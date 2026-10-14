@@ -11,7 +11,7 @@ const myHeader = `
 
 // 2. Define the Sidebar Content (No <aside> wrapper)
 const mySidebar = `
-    <img src="profile-pic.jpg" alt="Prashant Photo" class="profile-photo">
+    <img src="assets/images/profile-pic.jpg" alt="Prashant Photo" class="profile-photo">
     <div class="profile-header">
         <h1>Prashant Trivedi</h1>
         <p>Assistant Professor<br>

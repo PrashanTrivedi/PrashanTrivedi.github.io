@@ -13,27 +13,33 @@ I am an Assistant Professor in the Department of Computer Science and Informatio
 | [`bio.html`](bio.html) | Education and professional experience |
 | [`research.html`](research.html) | Research overview, journal and conference publications, preprints |
 | [`teaching.html`](teaching.html) | Current courses and past teaching experience |
-| [`CV-Prashant.pdf`](CV-Prashant.pdf) | Full CV |
+| [`CV-Prashant.pdf`](assets/docs/CV-Prashant.pdf) | Full CV |
 
 ## Structure
 
 ```
 .
-├── index.html        # Home / About / News
-├── bio.html          # Education & experience
-├── research.html     # Publications
-├── teaching.html     # Courses
-├── template.js       # Shared navigation bar and sidebar
-├── style.css         # Shared stylesheet (used by bio.html)
-├── profile-pic.jpg   # Sidebar photo
-├── CV-Prashant.pdf   # CV
-└── images/           # Institution logos (BITS, IIT Bombay, UCF, etc.)
+├── index.html                 # Home / About / News
+├── bio.html                   # Education & experience
+├── research.html              # Publications
+├── teaching.html              # Courses
+├── README.md
+└── assets/
+    ├── css/
+    │   └── style.css          # Single shared stylesheet for all pages
+    ├── js/
+    │   └── template.js        # Shared navigation bar and sidebar
+    ├── images/
+    │   ├── profile-pic.jpg    # Sidebar photo
+    │   └── logos/             # Institution logos (BITS, IIT Bombay, UCF, etc.)
+    └── docs/
+        └── CV-Prashant.pdf    # CV
 ```
 
 This is a plain static site with no build step and no dependencies.
 
-- **Shared layout:** `template.js` puts the same navigation bar and sidebar (photo, affiliation, contact links) into every page. Each page has an empty `<header id="main-header">` and `<aside id="main-sidebar">`, and loads the script at the end of `<body>`. To change a nav link or contact detail, edit `template.js` and every page updates.
-- **Styling:** `index.html`, `research.html` and `teaching.html` carry their own inline `<style>` blocks. `bio.html` uses `style.css`. All of them include a mobile layout below 768px, where the sidebar stacks above the content.
+- **Shared layout:** `assets/js/template.js` puts the same navigation bar and sidebar (photo, affiliation, contact links) into every page. Each page has an empty `<header id="main-header">` and `<aside id="main-sidebar">`, and loads the script at the end of `<body>`. To change a nav link or contact detail, edit `assets/js/template.js` and every page updates.
+- **Styling:** every page links the same `assets/css/style.css`, which has sections for each page and a mobile layout below 768px, where the sidebar stacks above the content. Put new styles there, not in inline `<style>` blocks.
 
 ## Common updates
 
@@ -50,7 +56,7 @@ This is a plain static site with no build step and no dependencies.
 
 **Add a course.** Add it under *Current Courses* in `teaching.html`. When the semester ends, move it to *Past Teaching Experience*.
 
-**Update the CV.** Replace `CV-Prashant.pdf` and keep the same filename so existing links still work.
+**Update the CV.** Replace `assets/docs/CV-Prashant.pdf` and keep the same filename so existing links still work.
 
 ## Local preview
 
