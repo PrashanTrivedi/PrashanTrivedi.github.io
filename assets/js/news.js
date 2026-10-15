@@ -2,6 +2,14 @@
 // The home page and the News page are both built from it.
 const newsItems = [
     {
+        date: "Sep 2026",
+        text: `Served as Sponsorship Chair for the <a href="https://www.bits-pilani.ac.in/bda-26/" target="_blank">14th International Conference on Big Data and AI (BDA 2026)</a>, held 17&ndash;20 September 2026 at BITS Pilani, K K Birla Goa Campus.`
+    },
+    {
+        date: "Aug 2026",
+        text: `Co-organised the <a href="https://appcair-jaw-2026.github.io/" target="_blank">Joint APPCAIR Workshop 2026 (JAW 2026)</a>, held 14&ndash;15 August 2026 at BITS Pilani, Pilani Campus, as part of the Research Talks and Local Organisation committees.`
+    },
+    {
         date: "Apr 2026",
         text: `Paper titled "Improved Sample Complexity Bounds For Diffusion Model Training Without Empirical Risk Minimizer Access" accepted in Transactions on Machine Learning Research (TMLR).`
     },
